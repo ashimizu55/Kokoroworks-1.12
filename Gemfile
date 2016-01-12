@@ -53,5 +53,10 @@ gem 'devise'
 gem 'paperclip'
 
 group :production, :staging do
-  gem 'rails_12factor'
+gem 'rails_12factor'
 end
+
+gem 'safe_attributes'
+gem 'therubyracer'
+gem 'twitter-bootstrap-rails'
+gem 'bootstrap-material-design', '0.1.4'

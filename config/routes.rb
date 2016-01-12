@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :therapists
+  resources :users
+  resources :top
+  resources :explanation, only: [:index]
+  resources :booking
+  resources :how_to_use
   root 'top#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
